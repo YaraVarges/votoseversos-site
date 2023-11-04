@@ -155,7 +155,7 @@ section {
   }
 
   .home p {
-    font-size: 18px;
+    padding: 0 18px 0 10px;
   }
 }
 
@@ -171,6 +171,7 @@ section {
 .about p {
   text-align: justify;
   line-height: 2rem;
+  padding: 0 18px 0 10px;
 }
 
 .about .content-musicians {
