@@ -205,6 +205,11 @@ section {
   border-radius: 160px;
 }
 
+.about .photo-artist:hover {
+  -webkit-filter: drop-shadow(10px 10px 5px #F4F1E8);
+  filter: drop-shadow(10px 10px 5px #F4F1E8);
+}
+
 
 /*-----Scroll top ----------*/
 .scroll-top {
@@ -562,7 +567,7 @@ section {
   }
 }
 
-.agenda {
+.schedule {
   width: 95%;
   text-align: center;
   list-style-type: none;
@@ -570,7 +575,22 @@ section {
 
 /*-------------#Videos-------------------*/
 .play-videos .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banda.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/miniatura.png") center center;
+  background-size: cover;
+  padding: 100px 60px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.play-videos .container.one{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/miniatura4.jpg") center center;
+  background-size: cover;
+  padding: 100px 60px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.play-videos .container.two{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/miniatura2.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -653,6 +673,25 @@ section {
 .play-videos .play-btn:hover:after {
   border-left: 15px solid var(--color-primary);
   transform: scale(20);
+}
+
+.play-videos button {
+  background-color: #703030;
+  color: #F4F1E8;
+  border: none;
+  padding: 8px 15px 8px 15px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .12rem;
+  transition: all .1s;
+}
+
+.play-videos button:hover {
+  transition: .5s ease-in-out;
+  background: var(--color-secondary);
 }
 
 /*-------------#Serviços----------------*/

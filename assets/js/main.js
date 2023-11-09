@@ -103,7 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Iniciar Glightbox */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    touchNavigation: true,
+    autoplayVideos: true
   });
 
   /* Botão de rolagem superior */
