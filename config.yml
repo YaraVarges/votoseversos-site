@@ -1,0 +1,28 @@
+import CMS from 'netlify-cms-app';
+import { Widget as FileWidget } from '@ncwidgets/file';
+
+CMS.registerWidget(FileWidget);
+
+CMS.init({
+  config: {
+    backend: {
+      name: 'github',
+      repo: 'seu-nome-de-usuario/seu-repositorio',
+    },
+    media_folder: 'static/uploads',
+    public_folder: '/uploads',
+    collections: [
+      {
+        name: 'posts',
+        label: 'Posts',
+        folder: 'content/posts',
+        create: true,
+        fields: [
+          { label: 'Título', name: 'title', widget: 'string' },
+          { label: 'Data', name: 'date', widget: 'datetime' },
+          { label: 'Conteúdo', name: 'body', widget: 'markdown' },
+        ],
+      },
+    ],
+  },
+});
