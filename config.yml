@@ -7,7 +7,7 @@ CMS.init({
   config: {
     backend: {
       name: 'github',
-      repo: 'seu-nome-de-usuario/seu-repositorio',
+      repo: 'YaraVarges/votoseversos-site',
     },
     media_folder: 'static/uploads',
     public_folder: '/uploads',
